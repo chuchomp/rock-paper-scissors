@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(./imgs/rps-background.jpg);
+}
+
+.divButtons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+}
+
+p {
+    font-size: 36px;
+}
+
+#results {
+    text-align: center;
+    font-size: 36px;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    font-weight: bolder;
+    font-size: 2rem;
+    height: 150px;
+    width: 200px;   
+    text-shadow:0px 1px 0px #e1e2ed;
+    box-shadow:inset 0px 0px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid black;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+
+
+}
+
+button:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+
+button:active {
+	position:relative;
+	top:1px;
+}
+
+.rock {
+    color: brown;
+}
+
+.paper {
+   color: white
+}
+
+.scissors {
+    color: rgb(75, 75, 197);
+}
+
+.score {
+    text-align: center;
+}
+
+.displayed-scores {
+    display: flex;
+    justify-content: space-around;
+}

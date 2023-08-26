@@ -5,9 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <button onclick="game()">Start the Game!</button>
+    <div id="gameboard">
+        <div id="choice-buttons" class="divButtons">
+            <button id='rock' class="rock">Rock</button>
+            <button id='paper' class="paper">Paper</button>
+            <button id='scissors' class="scissors">Scissors</button>
+        </div>
+        <div class="choices">
+            <span>
+                <p id="player-choice"></p>
+            </span>
+            <span>
+                <p id="comp-choice"></p>
+            </span>
+        </div>
+        <div>
+            <p id="results"></p>
+        </div>
+        <div>
+            <p class="score">Score</p>
+        </div>
+        <div class="displayed-scores">
+            <span>
+                <p id="player-score">Player: 0</p>
+            </span>
+            <span>
+                <p id="computer-score">Computer: 0</p>
+            </span>
+        </div>
+    </div>
     <script src="./rps.js"></script>
 </body>
 </html>
